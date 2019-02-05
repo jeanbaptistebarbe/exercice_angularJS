@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercice 1</title>
+    </head>
+<body>
+  <div ng-app>
+    <h3>Email Address Validation</h3>
+      <form name="contactForm" novalidate>
+          <label for="emailaddress">Email Address:</label>
+          <input type="email" name="emailaddress" ng-model="user.emailaddress" required>
+      </form>
+      <div style="color:red; font-weight:bold;margin-top:20px;" ng-show="contactForm.emailaddress.$invalid">
+              ERROR. Not correct Email.
+          </div>
+          <div style="color:green; font-weight:bold;margin-top:20px;" ng-show="contactForm.emailaddress.$valid">
+                  Valid Email.
+              </div>
+      </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+</body>
+</html>

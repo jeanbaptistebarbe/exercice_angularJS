@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercice 6</title>
+    </head>
+<body>
+  <div ng-app>
+  <button ng-click="showMe=true">P2</button>
+  <button ng-click="showMe=false">P1</button>
+  <div>
+    <p ng-hide="showMe">Le paragraphe 1 = Blablabla bla bla bla blablabla blabla blabla bla bla blabla!</p>
+    <p ng-show="showMe">Le paragraphe 2 = Blablablablablablabla!</p>
+  </div>
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercice 5</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    </head>
+<body>
+  <div ng-app="">
+  <button ng-click="showMe=true">Afficher</button>
+  <button ng-click="showMe=false">Cacher</button>
+  <div>
+    <p ng-hide="showMe"></p>
+    <p ng-show="showMe">Blablablablablablabla!</p>
+  </div>
+</div>
+</body>
+</html>

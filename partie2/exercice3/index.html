@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+  </head>
+  <body ng-app="schoolApp" ng-controller="studentsCtrl">
+    <div>
+      {{firstName+lastName+age+grade}}
+    </div>
+    <script>
+    var schoolApp = angular.module('schoolApp',[]);
+
+schoolApp.controller('studentsCtrl',function($scope){
+  $scope.firstName = 'Émilie ';
+  $scope.lastName = 'Gérard ';
+  $scope.age = '17 ';
+  $scope.grade = 'Terminale ';
+});
+</script>
+<script src="assets/angular/angular.min.js"></script>
+</body>
+</html>
